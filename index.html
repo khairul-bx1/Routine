@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Routine</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📅 Daily Routine</h1>
+    <div class="routine">
+      <!-- Programming Section -->
+      <div class="subject programming">
+        <h2>💻 Programming (7:00 AM - 5:00 PM)</h2>
+        <div class="input-container">
+          <input type="text" id="programmingTopic" placeholder="Enter today's programming topic">
+          <button onclick="addTopic('programming')"><i class="fas fa-plus"></i> Add</button>
+        </div>
+        <ul id="programmingTopics"></ul>
+      </div>
+
+      <!-- Physics Section -->
+      <div class="subject physics">
+        <h2>🔬 Physics (5:00 PM - 8:00 PM)</h2>
+        <div class="input-container">
+          <input type="text" id="physicsTopic" placeholder="Enter today's physics topic">
+          <button onclick="addTopic('physics')"><i class="fas fa-plus"></i> Add</button>
+        </div>
+        <ul id="physicsTopics"></ul>
+      </div>
+
+      <!-- Math Section -->
+      <div class="subject math">
+        <h2>🧮 Math (8:00 PM - 11:00 PM)</h2>
+        <div class="input-container">
+          <input type="text" id="mathTopic" placeholder="Enter today's math topic">
+          <button onclick="addTopic('math')"><i class="fas fa-plus"></i> Add</button>
+        </div>
+        <ul id="mathTopics"></ul>
+      </div>
+
+      <!-- English Section -->
+      <div class="subject english">
+        <h2>📚 English (11:00 PM - 1:00 AM)</h2>
+        <div class="input-container">
+          <input type="text" id="englishTopic" placeholder="Enter today's english topic">
+          <button onclick="addTopic('english')"><i class="fas fa-plus"></i> Add</button>
+        </div>
+        <ul id="englishTopics"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
